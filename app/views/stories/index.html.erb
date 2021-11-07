@@ -2,6 +2,12 @@
 
 <h1>Stories</h1>
 
+<%= form_tag import_stories_path, multipart: true do %>
+    <%= file_field_tag :file %>
+  <%= submit_tag "Upload file" %>
+
+<% end %>
+
 <table>
   <thead>
     <tr>
