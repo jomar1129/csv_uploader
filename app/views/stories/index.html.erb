@@ -7,13 +7,6 @@
   <%= submit_tag "Upload file" %>
 
 <% end %>
-
-<%= form_tag(stories_path, method: :get) do %>
-  <p> Search for a player </p>
-  <%= text_field_tag(:search, params[:search]) %>
-  <%= submit_tag ("Search") %>
-<% end %>
-
 <table class = "table">
   <thead>
     <tr>
