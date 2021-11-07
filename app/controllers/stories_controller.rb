@@ -56,6 +56,13 @@ class StoriesController < ApplicationController
     end
   end
 
+    # to import CSV
+
+  def import
+    Story.import(params[:file])
+    redirect_to stories_path, notice: "Stories Added Successfully!"
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_story
